@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.fullcontainer{
+    width: 100%;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li a{
+    display: block;
+    padding: 40px 40px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #000;
+}
+#bggreen{
+    position: absolute;
+    width: 400px;
+    height: 550px;
+    background-color: rgb(160, 202, 97);
+    top: 0;
+    right: 19%;
+    z-index: -1;
+}
+#intro{
+    margin: 50px 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#intro h1{
+    font-size: 3.5rem;
+}
+#intro p{
+    padding: 30px 0 15px 0;
+    letter-spacing: 1px;
+} 
+button{
+    margin-top: 15px;
+    padding: 15px 25px;
+    border: none;
+    background-color: rgb(160, 202, 97);
+    cursor: pointer;
+} 
+#intro a{
+    color: #fff;
+    letter-spacing: 1px;
+}
+#edu{
+    position: relative;
+}
+#edubg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 317px;
+    height: 275px;
+    z-index: -1;
+}
+#edu .row{
+    justify-content: start;
+}
+#edu h1{
+    font-size: 6rem;
+    letter-spacing: 2px;
+}
+#edudetails{
+    margin-left: 200px;
+}
+#edudetails h3{
+    font-size: 2.3rem;
+    color: rgb(160, 202, 97);
+    padding: 15px 0;
+}
+#edudetails p{
+    padding: 5px 0;
+}
+#mywork{
+    padding: 50px 0 0 0;
+}
+#mywork h1{
+    font-size: 3.5rem;
+}
+#mywork h1,#mywork #para{
+    text-align: center;
+    padding: 20px 0;
+}
+#mywork .row{
+    justify-content: space-around;
+}
+#mywork .row .col{
+    padding: 30px 0;
+}
+#mywork .pic{
+    position: relative;
+}
+#mywork .pic::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    background-color: rgb(160, 202, 97);
+    top: -5%;
+    left: 5%;
+}
+#mywork .row p{
+    padding: 5px 0;
+}
+#mywork .row a{
+    display: block;
+    padding: 5px 0;
+    color: rgb(160, 202, 97);
+}
+#achivements{
+    padding: 50px 0;
+    position: relative;
+}
+#achivements .row{
+    align-items: start;
+    justify-content: start;
+}
+.margin{
+    margin-left: 50px;
+}
+#achivements p{
+    width: 300px;
+    height: 150px;
+    position: relative;
+    padding-top: 8px;
+}
+#achivements p::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: rgb(160, 202, 97);
+    top: 0;
+    left: 0;
+}
+#proud{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 450px;
+    height: 325px;
+    background-color: rgb(160, 202, 97);
+    display: flex;
+    align-items: center;
+    z-index: -1;
+}
+#proud h1{
+    margin-left: 100px;
+    font-size: 4.5rem;
+    color: #fff;
+}
+#hobbies{
+    padding-bottom: 50px;
+}
+#hobbies h1{
+    font-size: 5rem;
+    padding-bottom: 30px;
+    color: rgb(160, 202, 97);
+}
+#contact .col{
+    margin-right: 5%;
+}
+#contact-info{
+    width: 500px;
+    height: 300px;
+    background-color: rgb(160, 202, 97);
+    display: flex;
+    align-items: center;
+}
+#contact-details{
+    margin-left: 100px;
+}
+#contact-details h1{
+    font-size: 4.5rem;
+    color: #fff;
+}
+#contact-details a{
+    color: #fff;
+    text-decoration: underline;
+}
+#social-media{
+    display: flex;
+    align-items: center;
+}
+#social-media img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+@media(max-width: 992px){
+    html{
+        font-size: 90%;
+    }
+    #navbar ul li a{
+        padding: 40px 30px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    #intro img{
+        margin-top: 30px;
+        width: 400px;
+        height: 400px;
+    }
+    #edudetails{
+        margin-left: 0;
+    }
+}
+@media(max-width: 768px){
+    html{
+        font-size: 76%;
+    }
+    button{
+        background-color: #fff;
+    }
+    #intro a{
+        color: rgb(160, 202, 97);
+    }
+    #navbar ul li a{
+        padding: 40px 20px;
+    }
+    #intro img{
+        width: 250px;
+        height: 250px;
+    }
+    #edubg{
+        width: 250px;
+        height: 170px;
+    }
+    #achivements p{
+        height: 80px;
+    }
+    .margin{
+        margin-left: 0;
+    }
+    #proud{
+        width: 200px;
+        height: 190px;
+    }
+    #proud h1{
+        margin-left: 30px;
+    }
+    #hobbypic{
+        margin-top: 30px;
+    }
+    #contact .col{
+        margin: 10px 0;
+    }
+    #contact-info{
+        justify-content: center;
+    }
+    #contact-details{
+        margin-left: 0px;
+    }
+}
+@media(max-width: 576px){
+    html{
+        font-size: 57%;
+    }
+    #navbar ul li a{
+        padding: 40px 5px;
+    }
+}
